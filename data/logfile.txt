@@ -1,0 +1,24 @@
+
+27/04/2022 22:48:17 : encrypt 100Kb proposed -tt 1951 -tp 52.0
+27/04/2022 22:48:25 : encrypt 250Kb proposed -tt 3514 -tp 72.0
+27/04/2022 22:48:44 : encrypt 500Kb proposed -tt 6056 -tp 84.0
+27/04/2022 22:49:01 : encrypt 1Mb proposed -tt 11563 -tp 90.0
+27/04/2022 22:50:10 : encrypt 5Mb proposed -tt 65281 -tp 80.0
+27/04/2022 22:52:41 : encrypt 10Mb proposed -tt 145849 -tp 71.0
+
+27/04/2022 22:55:34 : encrypt 100Kb base AES -tt 610 -tp 167.0
+27/04/2022 22:55:39 : encrypt 250Kb base AES -tt 948 -tp 269.0
+27/04/2022 22:55:45 : encrypt 500Kb base AES -tt 1204 -tp 424.0
+27/04/2022 22:55:53 : encrypt 1Mb base AES -tt 1677 -tp 624.0
+27/04/2022 22:56:03 : encrypt 5Mb base AES -tt 5046 -tp 1038.0
+27/04/2022 22:56:17 : encrypt 10Mb base AES -tt 8869 -tp 1181.0
+
+27/04/2022 22:56:33 : encrypt 100Kb base Blowfish -tt 2772 -tp 36.0
+27/04/2022 22:56:43 : encrypt 250Kb base Blowfish -tt 5985 -tp 42.0
+27/04/2022 22:56:58 : encrypt 500Kb base Blowfish -tt 9841 -tp 51.0
+27/04/2022 22:57:21 : encrypt 1Mb base Blowfish -tt 18498 -tp 56.0
+27/04/2022 22:59:03 : encrypt 5Mb base Blowfish -tt 98751 -tp 53.0
+27/04/2022 23:02:37 : encrypt 10Mb base Blowfish -tt 205372 -tp 51.0
+28/04/2022 10:22:55 : encrypt 100Kb proposed -tt 2094 -tp 48.0
+28/04/2022 10:26:57 : encrypt 500Kb proposed -tt 5908 -tp 86.0
+28/04/2022 10:27:24 : encrypt 500Kb proposed -tt 6366 -tp 80.0
