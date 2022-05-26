@@ -2,7 +2,7 @@ import java.util.*;
 
 public class TranspositionCipher {
 
-    public static String encrypt(String text, String[] keyArray) {
+    public static ArrayList<String> encrypt(String text, String[] keyArray) {
 
         String key = processKeyArray(keyArray);
 
@@ -27,21 +27,29 @@ public class TranspositionCipher {
                 z++;
             }
         }
-        String enc = "";
+
+        // long t = System.currentTimeMillis();
+        ArrayList<String> enc = new ArrayList<String>();
+        String enc_string = "";
         for (int x = 0; x < lenkey; x++) {
             for (int y = 0; y < lenkey; y++) {
                 if (x == arrange[y]) {
+                    enc_string = "";
                     for (int a = 0; a < row; a++) {
-                        enc = enc + grid[a][y];
+                        enc_string = enc_string + grid[a][y];
                     }
+                    enc.add(enc_string);
                 }
             }
         }
+        // System.out.println("Time taken: " + (System.currentTimeMillis() - t) +
+        // "ms.");
+
         return enc;
     }
 
     public static String decrypt(String text, String[] keyArray) {
-        
+
         String key = processKeyArray(keyArray);
 
         int[] arrange = arrangeKey(key);
@@ -69,14 +77,15 @@ public class TranspositionCipher {
         String dec = "";
         for (int x = 0; x < row; x++) {
             for (int y = 0; y < lenkey; y++) {
-                if(grid[x][y] != 'G') dec = dec + grid[x][y];
+                if (grid[x][y] != 'G')
+                    dec = dec + grid[x][y];
             }
         }
         return dec;
     }
 
     public static int[] arrangeKey(String key) {
-        //arrange position of grid
+        // arrange position of grid
         String[] keys = key.split("");
         Arrays.sort(keys);
         int[] num = new int[key.length()];
@@ -91,19 +100,19 @@ public class TranspositionCipher {
         return num;
     }
 
-    public static String processKeyArray(String[] keyArray){
+    public static String processKeyArray(String[] keyArray) {
 
-        String key = xorHex(keyArray[0],keyArray[1]);
+        String key = xorHex(keyArray[0], keyArray[1]);
 
         char ch = 'G';
         HashSet<Character> hs = new HashSet<Character>();
         StringBuilder sb = new StringBuilder();
         for (Character character : key.toCharArray()) {
-            if(hs.add(character)){
+            if (hs.add(character)) {
                 sb.append(character);
-            }else{
+            } else {
                 sb.append(ch);
-                ch = (char)((int)ch + 1);
+                ch = (char) ((int) ch + 1);
             }
         }
         String res = sb.toString();
@@ -118,7 +127,7 @@ public class TranspositionCipher {
         }
         return new String(chars);
     }
-    
+
     public static int fromHex(char c) {
         if (c >= '0' && c <= '9') {
             return c - '0';
@@ -131,7 +140,7 @@ public class TranspositionCipher {
         }
         throw new IllegalArgumentException();
     }
-    
+
     public static char toHex(int nybble) {
         if (nybble < 0 || nybble > 15) {
             throw new IllegalArgumentException();

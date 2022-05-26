@@ -22,3 +22,22 @@
 28/04/2022 10:22:55 : encrypt 100Kb proposed -tt 2094 -tp 48.0
 28/04/2022 10:26:57 : encrypt 500Kb proposed -tt 5908 -tp 86.0
 28/04/2022 10:27:24 : encrypt 500Kb proposed -tt 6366 -tp 80.0
+19/05/2022 13:33:17 : encrypt test base AES -tt 33 -tp 0.0
+19/05/2022 13:33:21 : decrypt test base AES -tt 17 -tp 3.0
+19/05/2022 13:34:26 : encrypt test base AES -tt 46 -tp 3.0
+19/05/2022 13:34:27 : decrypt test base AES -tt 33 -tp 9.0
+19/05/2022 13:35:48 : encrypt test base AES -tt 112 -tp 15.0
+19/05/2022 13:35:50 : decrypt test base AES -tt 49 -tp 73.0
+19/05/2022 13:38:38 : encrypt test base AES -tt 276 -tp 37.0
+19/05/2022 13:38:41 : decrypt test base AES -tt 87 -tp 235.0
+25/05/2022 11:46:39 : encrypt 100Kb proposed -tt 2985 -tp 34.0
+25/05/2022 11:49:00 : encrypt 500Kb proposed -tt 10314 -tp 49.0
+25/05/2022 11:53:01 : encrypt 1Mb proposed -tt 26037 -tp 40.0
+25/05/2022 11:57:08 : encrypt 100Kb proposed -tt 2298 -tp 44.0
+25/05/2022 11:57:41 : encrypt 100Kb proposed -tt 2541 -tp 40.0
+25/05/2022 12:01:13 : encrypt 100Kb proposed -tt 2337 -tp 43.0
+25/05/2022 12:18:05 : encrypt 100Kb proposed -tt 2509 -tp 40.0
+25/05/2022 12:25:03 : encrypt 100Kb proposed -tt 2807 -tp 36.0
+25/05/2022 12:39:23 : encrypt 500Kb proposed -tt 11437 -tp 44.0
+26/05/2022 10:51:54 : encrypt test proposed -tt 748 -tp 13.0
+26/05/2022 10:52:03 : decrypt test proposed -tt 461 -tp 44.0
